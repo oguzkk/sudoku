@@ -149,7 +149,7 @@ namespace SudokuApp.Helpers
                             List<int> allowedNumberList = GetAllowedNumberList(numberList);
                             if (allowedNumberList.Count == 1)
                             {
-                                puzzle[i, j] = (numberList)[0];
+                                puzzle[i, j] = allowedNumberList[0];
                                 anySquareSolved = true;
                             }
                             else
@@ -164,7 +164,7 @@ namespace SudokuApp.Helpers
                                 }
                                 if (allowedNumberList.Count == 1)
                                 {
-                                    puzzle[i, j] = (allowedNumberList)[0];
+                                    puzzle[i, j] = allowedNumberList[0];
                                     anySquareSolved = true;
                                 }
                             }
